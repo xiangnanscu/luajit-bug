@@ -9,7 +9,7 @@ or just paste this snippet in the bash
 ```sh
 for ((i=1; i<=50; i++))
 do
-  resty -I lualib  ./test.lua
+  resty test.lua
 done
 ```
 you will get output like
