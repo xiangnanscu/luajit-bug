@@ -28,6 +28,8 @@ local function main()
   end
   if n > 0 then
     error("-1 index happends:" .. n)
+  else
+    print("good! nothing happends")
   end
 end
 
