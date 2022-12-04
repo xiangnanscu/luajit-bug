@@ -16,7 +16,7 @@ end
 
 local function main()
   local n = 0
-  for i = 1, 100, 1 do
+  for i = 1, 10000, 1 do
     local c = jcopy { cond = { { "you shouldn't see this via index -1" } } }
     if c.cond[-1] then
       if n == 0 then
@@ -27,7 +27,7 @@ local function main()
     end
   end
   if n > 0 then
-    print("-1 index happends:" .. n)
+    error("-1 index happends:" .. n)
   end
 end
 
