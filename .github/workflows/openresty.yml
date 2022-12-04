@@ -6,9 +6,10 @@ on:
       - master
 
 jobs:
-  setup_openresty_and_postgresql:
+  setup_openresty:
     runs-on: ubuntu-20.04
     steps:
+    - uses: actions/checkout@v3
     - uses: xiangnanscu/gh-actions-openresty@main
       with:
         openrestyVersion: "1.21.4.1"
