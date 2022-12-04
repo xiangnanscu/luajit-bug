@@ -3,9 +3,6 @@ local function jcopy(o)
     if type(v) == "table" then
       local cv = {}
       for key, value in pairs(v) do
-        if key == -1 then
-          error(tostring(key))
-        end
         cv[key] = copy(value)
       end
       return cv

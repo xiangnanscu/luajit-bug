@@ -1,0 +1,18 @@
+name: Test Openresty
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  setup_openresty_and_postgresql:
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: xiangnanscu/gh-actions-openresty@main
+      with:
+        openrestyVersion: "1.21.4.1"
+    - name: test
+      run: |
+        for ((i=1; i<=500; i++)); do resty test.lua; done
+        echo finish

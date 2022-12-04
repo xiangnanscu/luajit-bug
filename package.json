@@ -1,0 +1,20 @@
+{
+  "name": "luajit-bug",
+  "version": "1.0.0",
+  "description": "a minimal repo that shows bug",
+  "main": "index.js",
+  "scripts": {
+    "commit": "git add . && git commit -am \"${msg-message: } $(date +%Y-%m-%d_%H:%M:%S)\"",
+    "push": "yarn commit && git push origin master --push-option=${push_option:-nothing}"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiangnanscu/luajit-bug.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiangnanscu/luajit-bug/issues"
+  },
+  "homepage": "https://github.com/xiangnanscu/luajit-bug#readme"
+}
