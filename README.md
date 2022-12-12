@@ -4,7 +4,7 @@ a minimal repo that shows bug
 # how to test
 just paste this snippet in the bash
 ```sh
-for ((i=1; i<=50; i++)); do resty test.lua; done
+for ((i=1; i<=500; i++)); do resty test.lua; done
 ```
 you will get output like
 ```
